@@ -1,8 +1,11 @@
 import React from "react";
 /* import MouseMove from "./MouseMove";
 import Form from "./forms/forms.js"; */
-import FormCoordenadasComponent from "./forms/formCoordenadasComponent";
-import FormNameComponent from "./forms/formNameComponent";
+
+/* import FormCoordenadasComponent from "./components/forms/formCoordenadasComponent";
+import FormNameComponent from "./components/forms/formNameComponent"; */
+
+import SearchBar from "./components/movie-search/SearchBar";
 
 export default class App extends React.Component {
   state = {
@@ -21,12 +24,13 @@ export default class App extends React.Component {
   render() {
     return (
       <>
-        <div>
+        <SearchBar />
+        {/* <div>
           <button onClick={this.showForm}>Formulario</button>
           <button onClick={this.showCords}>Coordenadas</button>
         </div>
         {this.state.showForm ? <FormNameComponent /> : null}
-        {this.state.showCords ? <FormCoordenadasComponent /> : null}
+        {this.state.showCords ? <FormCoordenadasComponent /> : null} */}
       </>
     );
   }
